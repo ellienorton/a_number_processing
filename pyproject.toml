@@ -1,0 +1,27 @@
+[project]
+name = "a_number_processing"
+version = "1.0.0"
+dependencies = [
+    "et-xmlfile==1.1.0",
+    "numpy==1.26.3",
+    "openpyxl==3.1.2",
+    "pandas==2.2.0",
+    "pyarrow==15.0.0",
+    "python-dateutil==2.8.2",
+    "pytz==2023.4",
+    "six==1.16.0",
+    "tzdata==2023.4",
+    "XlsxWriter==3.1.9",
+]
+requires-python = ">= 3.10"
+
+[project.urls]
+Homepage = "https://github.com/ellienorton/a_number_processing"
+Issues = "https://github.com/ellienorton/a_number_processing/issues"
+
+[project.scripts]
+a_number_processing = "a_number_processing.a_number_processing:main"
+
+[build-system]
+requires = ["hatchling<=1.18.0"]
+build-backend = "hatchling.build"
